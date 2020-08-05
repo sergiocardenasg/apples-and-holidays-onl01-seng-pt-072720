@@ -48,7 +48,7 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   holiday_hash.each do |holiday, supply|
     if supply == "BBQ"
-      return holiday_hash.keys.flatten
+      return holiday_hash.holiday.keys.flatten
     end
   end
 end
